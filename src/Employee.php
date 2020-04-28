@@ -11,7 +11,6 @@ class Employee
     {
         $this->firstName = $firstName;
         $this->lastName = $lastName;
-        $this->email = $email;
     }
 
 
