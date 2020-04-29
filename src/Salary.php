@@ -1,12 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: alaeddine.thamine
- * Date: 28/04/2020
- * Time: 16:27
- */
+
 
 class Salary
 {
-
+    static public function calculNetSalary($grossMonthlySalary)
+    {
+        return ($grossMonthlySalary * 55) / 100;
+    }
 }

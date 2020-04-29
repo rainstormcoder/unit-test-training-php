@@ -1,5 +1,7 @@
 <?php
 
+include "Salary.php";
+
 class Employee
 {
     private $firstName;
@@ -59,12 +61,12 @@ class Employee
 
     public function getFullName()
     {
-        // TODO: Retourner le nom prénom
+        return $this->firstName . ' ' . $this->lastName;
     }
 
     public function getNetSalary()
     {
-        // TODO: Retourner le salaire net
+        return Salary::calculNetSalary($this->grossMonthlySalary);
     }
 
 }
